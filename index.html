@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <div id="loading-screen">
+    <img src="assets/INTRO.gif" alt="Votre GIF" id="loading-gif">
+  </div>
+  <nav id="desktop-nav">
+    <div class="logo"> A@J </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#about">A Propos</a></li>
+        <li><a href="#experience">Stacks</a></li>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">A@J</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#" onclick="toggleMenu()">Accueil</a></li>
+        <li><a href="#about" onclick="toggleMenu()">APropos</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Stacks</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/1.jpg" alt="photo profile" class="about-pic" />
+    </div>
+    <div class="section__text">
+      <h1 class="title">Ahmed Jmal</h1>
+      <p class="section__text__p2">Je suis Developpeur Web</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Ahmed Jmal .pdf')">
+          CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#projects'">
+          Portfolio
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/jmal-ahmed-b0b8b3224/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/ahmedjmal-tn'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Qui suis-je</p>
+    <h1 class="title">A Propos</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Experience icon" class="icon" />
+            <h3>Soft Skills</h3>
+            <p>Serviable</p>
+            <p>Intelligence sociale</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Education icon" class="icon" />
+            <h3>Certifications</h3>
+            <p><a href="./assets/Django_Certif.pdf" target="_blank">Udemy Django Certification</a>
+            </p>
+
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            En tant que jeune développeur web et logiciel, chaque projet constitue pour moi une opportunité de relever
+            de nouveaux défis et d'explorer de nouvelles approches pour créer des solutions innovantes. L'un de mes
+            principaux atouts réside dans ma capacité à m'adapter rapidement à de nouvelles technologies. Que ce soit
+            pour apprendre un nouveau langage de programmation, maîtriser un framework inédit ou intégrer une solution
+            tierce, je démontre une agilité peu commune. Cette flexibilité, associée à une ambition profonde de devenir
+            le meilleur développeur possible, fait de moi un membre polyvalent et fiable au sein d'une équipe de
+            développeurs.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Ma pile de technologies</p>
+    <h1 class="title">Stacks</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">FrontEnd</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/html.png" alt="Experience icon" class="icon" />
+              <img src="./assets/css.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML|CSS</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/javascript.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/angular.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Angular JS</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">BackEnd</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/python.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/django.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Django</h3>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/postman.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3> Php</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">DataBases</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/postgresql.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/mongodb.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Mongo DB</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/Firebase.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>FireBase</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">3 de mes projects les plus aboutis</p>
+    <h1 class="title">Portfolio</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">GoloGo</h2>
+          <p class="section__text__p1">Un projet de moteur de recherche avec PHP visant à faciliter la recherche </p>
+          <br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/ahmedjmal-tn/Moteur-de-Recherche'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">TCM
+          </h2>
+          <p class="section__text__p1">Un projet de plateforme web de gestion complète pour un centre de formation.
+          </p><br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/ahmedjmal-tn/TrainingCenterManagement'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://ahmedjmal-tn.github.io/TrainingCenterManagement/'">
+              Voir Lien
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Athena Shop </h2>
+          <p class="section__text__p1">Un projet regroupant trois applications : Athena Shop, Athena Magazine et Athena
+            Analyse
+          </p><br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ZakariaDiarra'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='http://www.c-athena.com/?fbclid=IwAR1-8cvAslS2kA7NuH2NEDkbUaBKgR3879-OSeLRbjxLCFO5cFzdLDk0gGI'">
+              Voir Lien
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">A votre disposition</p>
+    <h1 class="title">Contactez-Moi</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:https://ahmed.jemel2639@gmail.com
+            ">ahmed.jemel2639@gmail.com
+          </a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="//www.linkedin.com/in/jmal-ahmed-b0b8b3224/">LinkedIn</a></p>
+      </div>
+    </div>
+    </div>
+
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#about">A Propos</a></li>
+          <li><a href="#experience">Stacks</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 | Par Ahmed.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        var loadingScreen = document.getElementById('loading-screen');
+        loadingScreen.style.display = 'none';
+      }, 2000); // 5000 millisecondes (5 secondes)
+    });
+  </script>
+  
+</body>
+
+</html>
